@@ -17,79 +17,179 @@
     <div class="logo">BARNABAS<span>OGO-OLUWA</span></div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="research.html">Research Overview</a></li>
-      <li><a href="#intro">Introduction</a></li>
-      <li><a href="#physics">Technical Physics</a></li>
-      <li><a href="#references">References</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="assignment.html" class="active">Technical Paper</a></li>
     </ul>
   </nav>
 
-  <article>
-    <section id="intro">
-      <h2>1. Executive Summary & Introduction</h2>
-      <p>
-        High-Frequency Induction (HFI) welding is the backbone of the global tube and pipe manufacturing industry. 
-        This project explores electromagnetic induction as a primary joining method, capable of producing 
-        high-integrity longitudinal seams at high speeds. By eliminating filler metals and minimizing the Heat 
-        Affected Zone (HAZ), the parent metal retains its chemical and mechanical properties.
-      </p>
-    </section>
-
-    <section id="physics">
-      <h2>2. Technical Physics: Skin & Proximity Effects</h2>
-      <p>
-        The efficiency of HFI welding relies on two specific electrical behaviors induced by high-frequency alternating 
-        current (150 kHz to 450 kHz):
-      </p>
-      <ul>
-        <li><strong>The Skin Effect:</strong> As frequency increases, current is forced to flow only on the thin outer 
-          "skin" of the metal, leading to rapid heating with minimal power loss to the core.</li>
-        <li><strong>The Proximity Effect:</strong> When the edges of the formed strip approach in a "V" shape, the 
-          current naturally concentrates along those meeting edges, maximizing energy efficiency at the weld point.</li>
+  <main class="content-wrapper">
+    <aside class="sidebar">
+      <h4>In This Paper</h4>
+      <ul class="sidebar-nav">
+        <li><a href="#intro">Executive Summary</a></li>
+        <li><a href="#induction-intro">Introduction</a></li>
+        <li><a href="#components">System Components</a></li>
+        <li><a href="#process">Process Flow</a></li>
+        <li><a href="#specifications">Specifications</a></li>
+        <li><a href="#pwht">Post-Weld Treatment</a></li>
+        <li><a href="#multimedia">Multimedia</a></li>
+        <li><a href="#references">References</a></li>
       </ul>
-      <figure>
-        <img src="assets/1.jpeg" alt="Tube Butt Seam Diagram">
-        <figcaption>Figure 1: Illustration of Tube Butt and Mash Seams during induction welding.</figcaption>
-      </figure>
-    </section>
+    </aside>
 
-    <section id="process">
-      <h2>3. Manufacturing Process Flow</h2>
-      <p>
-        The system comprises key components including the HF Power Supply, Induction Coil, and the Impedor (Ferrite 
-        Core) which focuses current on the weld "Vee". The flow follows these critical stages:
-      </p>
-      <ol>
-        <li><strong>Forming:</strong> Steel strip is precisely bent into a round shell via a series of rollers.</li>
-        <li><strong>Induction Heating:</strong> Edges are heated to a plastic state ($1300^{\circ}C$ to $1450^{\circ}C$) without physical contact.</li>
-        <li><strong>Forging:</strong> High-precision squeeze rolls bond the edges together, creating a forged weld.</li>
-        <li><strong>Sizing/Shaping:</strong> Final geometric shaping transforms the round pipe into square or rectangular profiles.</li>
-      </ol>
-    </section>
+    <article class="with-sidebar">
+      <section id="intro">
+        <h2>1. Executive Summary</h2>
+        <p>
+          High-Frequency Induction (HFI) welding stands as the backbone of the global tube and pipe manufacturing
+          industry[cite: 85].
+          This project explores the integration of electromagnetic induction as a primary joining method, capable of
+          producing high-integrity longitudinal seams at speeds that far exceed traditional arc welding methods[cite: 86].
+          Beyond simple joining, HFI welding for steamed pipes requires a rigorous adherence to metallurgical stability to
+          withstand fluctuating thermal loads and internal pressures[cite: 87].
+          By eliminating filler metals and minimizing the Heat Affected Zone (HAZ), this process ensures that the finished
+          product retains the chemical and mechanical properties of the base parent metal[cite: 89].
+        </p>
+      </section>
 
-    <section id="multimedia">
-      <h2>4. Multimedia Demonstrations</h2>
-      <p>The following video demonstration illustrates the HFI principles and the high-speed production environment used in professional manufacturing.</p>
-      <div class="video-container">
-        <video controls poster="assets/1.jpeg" style="width: 100%; height: auto; display: block;">
-          <source src="assets/induction_welding_demo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <p style="text-align: center; font-size: 0.9rem; opacity: 0.6;">Industrial High-Frequency Induction Welding Process.</p>
-    </section>
+      <section id="induction-intro">
+        <h2>2. Introduction to Induction Welding</h2>
+        <p>
+          Induction welding is a sophisticated application of electromagnetism and fluid dynamics used to join the edges
+          of a metal strip into a continuous hollow profile[cite: 91].
+          The process involves passing a high-frequency alternating current (typically 150 kHz to 450 kHz) through a
+          copper induction coil[cite: 92].
+          This coil creates a rapidly oscillating magnetic field which induces "Eddy Currents" within the metal
+          strip[cite: 93].
+        </p>
 
-    <section id="references">
-      <h2>5. References (APA 7)</h2>
-      <div class="reference-list">
-        <p>Asahi, H. (2017). High-frequency induction welding of steel pipes. In J. Lawrence (Ed.), <i>Advances in Laser Materials Processing</i> (2nd ed., pp. 581-605). Woodhead Publishing.</p>
-        <p>Grover, G. S., & Singh, R. (2020). Analysis of heat affected zone in induction welded tubes. <i>International Journal of Modern Manufacturing Technologies</i>, 12(1), 45-52.</p>
-        <p>Rudnev, V., Loveless, D., & Cook, R. (2017). <i>Handbook of Induction Heating</i> (2nd ed.). CRC Press.</p>
-        <p>Scott, J. (2018). <i>Principles of High-Frequency Welding</i>. Industrial Press Inc.</p>
-        <p>Zinn, S., & Semiatin, S. L. (1988). <i>Elements of Induction Heating: Design, Control, and Applications</i>. ASM International.</p>
-      </div>
-    </section>
-  </article>
+        <div class="technical-details">
+          <h3>The "Magic" of HFI Welding</h3>
+          <ul style="margin-left: 0; list-style-position: inside;">
+            <li><strong>The Skin Effect:</strong> As frequency increases, the induced current is forced to flow only on
+              the thin outer "skin" of the metal, leading to rapid heating with minimal power loss to the core[cite: 95].
+            </li>
+            <li><strong>The Proximity Effect:</strong> When the two edges of the formed strip approach each other in a "V"
+              shape, the current naturally concentrates along those meeting edges[cite: 96].</li>
+          </ul>
+          <p style="margin-top: 1rem;">
+            This concentration allows edges to reach a forging state (1300°C to 1450°C) in milliseconds[cite: 97].
+            Because the heating is so localized, it prevents the widespread distortion or "warping" commonly seen in TIG
+            or MIG welding[cite: 97].
+          </p>
+        </div>
+
+
+        <figure>
+          <img src="assets/1.jpeg" alt="Tube Butt Seam Diagram">
+          <figcaption>Figure 1: Illustration of Tube Butt and Mash Seams during the induction process[cite: 135].
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="components">
+        <h2>3. System Components & Setup</h2>
+        <ul>
+          <li><strong>HF Power Supply:</strong> A high-output inverter that generates the required frequency[cite: 99].
+          </li>
+          <li><strong>Induction Coil:</strong> A custom-shaped copper workhead that transfers energy to the pipe[cite:
+            101].</li>
+          <li><strong>Impedor (Ferrite Core):</strong> A magnetic tool placed inside the tube to focus current on the weld
+            "Vee"[cite: 102].</li>
+          <li><strong>Squeeze Rolls:</strong> Heavy-duty rollers that provide the mechanical forge pressure needed to bond
+            the molten edges[cite: 103].</li>
+          <li><strong>Seam Guide:</strong> A ceramic blade or roller ensuring the weld gap is perfectly centered as it
+            enters the coil[cite: 104].</li>
+        </ul>
+      </section>
+
+      <section id="process">
+        <h2>4. Manufacturing Process Flow</h2>
+        <ol>
+          <li><strong>Forming:</strong> Flat steel strip is progressively bent into a round "open" shell[cite: 106].</li>
+          <li><strong>Induction Heating:</strong> The coil heats the converging edges via electromagnetic induction[cite:
+            107].</li>
+          <li><strong>Forging:</strong> Squeeze rolls press edges together, extruding "flash" (excess metal) for a clean
+            bond[cite: 108].</li>
+          <li><strong>Scarfing:</strong> The hot flash is shaved off internally and externally[cite: 109].</li>
+          <li><strong>Cooling:</strong> The pipe is water-cooled to stabilize dimensions[cite: 110].</li>
+          <li><strong>Sizing & Shaping:</strong> For square tubes, round pipe is passed through "Turks Head" rolls to form
+            90-degree corners[cite: 111].</li>
+        </ol>
+
+      </section>
+
+      <section id="specifications">
+        <h2>5. Technical Specifications & Quality Control</h2>
+        <table class="spec-table" style="width:100%; border-collapse: collapse; margin-bottom: 1.5rem; color: var(--text-light);">
+          <thead>
+            <tr style="background-color: var(--charcoal);">
+              <th style="border: 1px solid rgba(255,255,255,0.1); padding: 12px; text-align: left;">Parameter</th>
+              <th style="border: 1px solid rgba(255,255,255,0.1); padding: 12px; text-align: left;">Steamed Pipe (Pressure)</th>
+              <th style="border: 1px solid rgba(255,255,255,0.1); padding: 12px; text-align: left;">Square Tube (Structural)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="border: 1px solid rgba(255,255,255,0.1); padding: 12px;">Material Standard</td>
+              <td style="border: 1px solid rgba(255,255,255,0.1); padding: 12px;">API 5L/ASTM A53 [cite: 117]</td>
+              <td style="border: 1px solid rgba(255,255,255,0.1); padding: 12px;">ASTM A500 Grade B/C [cite: 118]</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid rgba(255,255,255,0.1); padding: 12px;">Testing</td>
+              <td style="border: 1px solid rgba(255,255,255,0.1); padding: 12px;">Hydrostatic + Ultrasonic [cite: 120]</td>
+              <td style="border: 1px solid rgba(255,255,255,0.1); padding: 12px;">Eddy Current + Flare Test [cite: 121]</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Quality Control Measures</h3>
+        <ul>
+          <li><strong>Eddy Current Testing:</strong> An in-line NDT method that flags weld discontinuities instantly[cite:
+            127].</li>
+          <li><strong>Hydrostatic Testing:</strong> Vital for steamed pipes; the pipe is pressurized with water to ensure
+            zero leakage[cite: 128].</li>
+        </ul>
+      </section>
+
+      <section id="pwht">
+        <h2>6. Post-Weld Heat Treatment</h2>
+        <p>
+          For steam-carrying pipes, the weld area becomes "quenched" and brittle[cite: 130].
+          We implement Seam Normalizing using a secondary induction unit to reheat the seam to 900°C[cite: 130, 131].
+          This refines the grain structure, ensuring the weld can handle the expansion and contraction of high-heat steam
+          environments[cite: 132].
+        </p>
+      </section>
+
+      <section id="multimedia">
+        <h2>7. Multimedia Demonstrations</h2>
+        <p>The following video demonstration illustrates the HFI principles and the high-speed production
+          environment[cite: 133].</p>
+        <div class="video-container">
+          <video controls poster="assets/1.jpeg" style="width: 100%; height: auto; display: block;">
+            <source src="assets/induction_welding_demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
+      <section id="references">
+        <h2>8. References (APA 7)</h2>
+        <div class="reference-list">
+          <p>Asahi, H. (2017). High-frequency induction welding of steel pipes. In J. Lawrence (Ed.), <i>Advances in Laser
+              Materials Processing</i> (2nd ed., pp. 581-605). Woodhead Publishing[cite: 138, 139].</p>
+          <p>Grover, G. S., & Singh, R. (2020). Analysis of heat affected zone in induction welded tubes. <i>International
+              Journal of Modern Manufacturing Technologies</i>, 12(1), 45-52[cite: 139, 140].</p>
+          <p>Rudnev, V., Loveless, D., & Cook, R. (2017). <i>Handbook of Induction Heating</i> (2nd ed.). CRC Press[cite:
+            141].</p>
+          <p>Scott, J. (2018). <i>Principles of High-Frequency Welding</i>. Industrial Press Inc[cite: 142].</p>
+          <p>Zinn, S., & Semiatin, S. L. (1988). <i>Elements of Induction Heating: Design, Control, and Applications</i>.
+            ASM International[cite: 143].</p>
+        </div>
+      </section>
+    </article>
+  </main>
 
   <footer>
     <div class="footer-info">
