@@ -1,0 +1,17 @@
+# Environments
+.env
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Build/Dependency Directories (just in case)
+node_modules/
+dist/
+build/
+
+# IDE/Editor Configs
+.vscode/
+.idea/
+*.swp
+*.swo
