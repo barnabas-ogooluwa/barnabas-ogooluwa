@@ -412,6 +412,7 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   opacity: 0.8;
   transition: var(--transition);
 }
@@ -553,23 +554,36 @@ figcaption {
   font-style: italic;
 }
 
+.video-grid,
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.image-grid figure {
+  margin: 0;
+}
+
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
-  margin: 2rem 0;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.video-container iframe {
+.video-container iframe,
+.video-container video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   border: none;
+  object-fit: cover;
 }
 
 /* Reference List */
